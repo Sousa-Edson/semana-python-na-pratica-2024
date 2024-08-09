@@ -1,0 +1,29 @@
+# Ignore arquivos de bibliotecas instaladas
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.egg
+
+# Ignore o ambiente virtual
+venv/
+env/
+.venv/
+.env/
+
+# Ignore arquivos de log
+*.log
+
+# Ignore arquivos de configuração do IDE/editor
+.vscode/
+.idea/
+
+# Ignore arquivos de teste do Pytest
+.pytest_cache/
+
+# Ignore arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignore arquivos de backup do sistema operacional
+.DS_Store
+Thumbs.db
