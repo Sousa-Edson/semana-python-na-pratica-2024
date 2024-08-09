@@ -35,14 +35,15 @@ Edson
 """
 
 # abre o navegador
-webbrowser.open("www.gmail.com")
+webbrowser.open("https://mail.google.com/mail/u/0/#inbox?compose=new")
 time.sleep(3)
 
 # configurarando uma pausa de 3 segundos
 pyautogui.PAUSE = 1
 
 # posiciona o cursor em ecrever e clicar
-pyautogui.click(x=2080, y=228)
+# pyautogui.click(x=2080, y=228)
+pyautogui.hotkey('tab')
 
 # digitar o destinatário e teclar TAB
 pyperclip.copy(destinatario)
@@ -57,10 +58,10 @@ pyautogui.hotkey('tab')
 # digitar a mensagem e teclar TAB
 pyperclip.copy(mensagem)
 pyautogui.hotkey('ctrl', 'v')
-pyautogui.click(x=2741, y=870)
+# pyautogui.click(x=2741, y=870)
 
 # fecha gmail
-pyautogui.hotkey('ctrl', 'f4')
+pyautogui.hotkey('ctrl', 'enter')
 
 
 print("Email enviado com sucesso")
